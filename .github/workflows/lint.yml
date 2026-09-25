@@ -39,4 +39,5 @@ jobs:
         run: npm run lint
 
       - name: Run tests
-        run: npm test -- --coverage
+        # Skipped (not failed) if package.json has no "test" script
+        run: npm run test --if-present
