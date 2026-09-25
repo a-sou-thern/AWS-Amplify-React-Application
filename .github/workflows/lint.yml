@@ -1,11 +1,16 @@
 name: React lint
 
 on:
-	push:
-	pull_request:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
 	lint:
+		name: React Application Lint Tester
 		runs-on: ubuntu-latest
 		steps:
 			- name: Check out repository

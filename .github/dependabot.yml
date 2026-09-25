@@ -7,6 +7,6 @@ version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
-    target-branch: "Development" # Target branch for scanning and updates
+    target-branch: "main" # Target branch for scanning and updates
     schedule:
       interval: "weekly"
