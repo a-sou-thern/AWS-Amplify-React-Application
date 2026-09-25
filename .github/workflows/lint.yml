@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-	lint:
+	React lint:
 		name: React Application Lint Tester
 		runs-on: ubuntu-latest
 		steps:
