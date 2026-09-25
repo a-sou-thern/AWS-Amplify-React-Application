@@ -1,29 +1,31 @@
 name: React lint
 
 on:
-  push:
+
+	push:
     branches:
       - main
-  pull_request:
+  	pull_request:
     branches:
       - main
 
-jobs:
-	React lint:
-		name: React Application Lint Tester
-		runs-on: ubuntu-latest
-		steps:
-			- name: Check out repository
-				uses: actions/checkout@v4
+	jobs:
+ 		build:
+			name: Lint Tester
+			runs-on: ubuntu-latest
 
-			- name: Set up Node.js
-				uses: actions/setup-node@v4
-				with:
-					node-version: 20
-					cache: npm
+				steps:
+					- name: Check out repository
+						uses: actions/checkout@v4
 
-			- name: Install dependencies
-				run: npm ci
+					- name: Set up Node.js
+						uses: actions/setup-node@v4
+						with:
+							node-version: 20
+							cache: npm
 
-			- name: Lint with critical-error threshold
-				run: npm run lint -- --quiet
+					- name: Install dependencies
+						run: npm ci
+
+					- name: Lint with critical-error threshold
+						run: npm run lint -- --quiet
