@@ -24,7 +24,6 @@ function App() {
   function deleteTodo(id: string) {
     client.models.Todo.delete({ id })
   }
-
   return (
     <main>
       <h1>www.a-sou-thern.com - Create a Todo!</h1>
@@ -32,11 +31,11 @@ function App() {
       <ul>
         {todos.map((todo) => (
           <li onClick={() => deleteTodo(todo.id)}
-						key={todo.id}>{todo.content}</li>
+          key={todo.id}>{todo.content}</li>
         ))}
       </ul>
       <div>
-				a-sou-thern Simple Web Application Test
+        Time to add a new To Do!
         <br />
         <a href="https://docs.amplify.aws/react/start/quickstart/#make-frontend-updates">
           Review next step of this tutorial.
