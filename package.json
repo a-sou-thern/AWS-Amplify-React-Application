@@ -20,7 +20,7 @@
     "npm": ">= 10.8.0"
   },
   "devDependencies": {
-    "@aws-amplify/backend": "~1.19.0",
+    "@aws-amplify/backend": "~1.25.1",
     "@aws-amplify/backend-cli": "~1.8.1",
     "@eslint/compat":  "~2.0.1",
     "@eslint/eslintrc": "~3.3.3",
